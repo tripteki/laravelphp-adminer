@@ -1,0 +1,61 @@
+{
+    "name": "tripteki/laravelphp-adminer",
+    "version": "1.0.0",
+    "description": "Trip Teknologi's Laravel.php Adminer",
+
+    "readme": "README.md",
+    "license": "MIT",
+    "authors": [ { "name": "Trip Teknologi", "email": "tripteki.company@gmail.com" } ],
+    "homepage": "https://github.com/tripteki/laravelphp-adminer",
+    "support": { "issues": "https://github.com/tripteki/laravelphp-adminer/issues" },
+
+    "require": {
+
+        "php": "^8.0.2",
+
+        "tripteki/laravelphp-helpers": "^1.0.0",
+
+        "tripteki/laravelphp-notification": "^1.0.0",
+        "tripteki/laravelphp-setting": "^1.0.0",
+        "tripteki/laravelphp-setting-profile": "^1.0.0",
+        "tripteki/laravelphp-setting-menu": "^1.0.0",
+        "tripteki/laravelphp-setting-locale": "^1.0.0",
+        "tripteki/laravelphp-acl": "^1.0.0",
+        "tripteki/laravelphp-log": "^1.0.0",
+        "tripteki/laravelphp-import-export": "^1.0.0",
+        "tripteki/laravelphp-request-response-query": "^1.0.0"
+    },
+
+    "require-dev": {},
+
+    "suggest": {
+
+        "laravel/lumen-framework": "Required when using lumen framework (^9.0).",
+        "laravel/framework": "Required when using laravel framework (^9.0)."
+    },
+
+    "autoload": {
+
+        "psr-4": {
+
+            "Tripteki\\Adminer\\": "src/"
+        }
+    },
+
+    "autoload-dev": {},
+
+    "extra": {
+
+        "laravel": {
+
+            "dont-discover": [],
+
+            "providers": [
+
+                "Tripteki\\Adminer\\Providers\\AdminerServiceProvider"
+            ],
+
+            "aliases": []
+        }
+    }
+}
